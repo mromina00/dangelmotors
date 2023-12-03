@@ -26,17 +26,22 @@
                         <li><a href="#dolar">Dolar</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
+                    <!-- Botón LogIn -->
+                    <a class="btnLogin-popup" href="#">Iniciar Sesión</a>
                     <!-- ícono menú desplegable -->
                     <button class="navtoggle">
                         <i class='bx bx-menu'></i>
                     </button>
             </nav>
             <div class="menu-desplegable">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#vehiculos">Vehículos</a></li>
-                <li><a href="#dolar">Dolar</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <div class="li">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#vehiculos">Vehículos</a></li>
+                    <li><a href="#dolar">Dolar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </div>
+                <a class="btnLogin-popup" href="#">Iniciar Sesión</a>
             </div>
         </header>
         <main class="inicio" id="inicio">
@@ -67,6 +72,28 @@
                 <div class="nav-btn"></div>
             </div>
         </main>
+    </div>
+    <section class="login-container">
+        <div class="wrapper">
+            <span class="icon-close"><i class='bx bxs-x-circle'></i></span>
+            <div class="login">
+                <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <div class="input-box-login">
+                    <span class="icon"><i class='bx bx-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box-login">
+                    <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <button type="submit" class="btn-login1">Iniciar Sesión</button>
+            </form>
+            </div>
+        </div>
+    </section>
     </div>
     <section class="nosotros" id="nosotros">
         <div class="contenido">
@@ -243,7 +270,7 @@
                     <p>8:30hs - 12:30hs</p>
                 </div>
                 <div class="footer-col">
-                    <h3>Direción</h3>
+                    <h3>Dirección</h3>
                     <p>General Alvear - Mendoza</p>
                     <p>Av. Libertador Norte 102</p>
                     <p>Tel.: +54 9 2625 40-7443</p>
