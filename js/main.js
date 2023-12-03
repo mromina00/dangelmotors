@@ -161,14 +161,24 @@ const add_btn_scrolltop = () => {
 
 // Botón de Inicio de Sesión
 
-const wrapper = document.querySelector('.wrapper');
-const btnPopup = document.querySelector('.btnLogin-popup');
+document.addEventListener('DOMContentLoaded', function() {
+    const loginContainer = document.getElementById('login-container');
+    const navLoginBtn = document.getElementById('nav-login-btn');
+    const menuLoginBtn = document.getElementById('menu-login-btn');
 
-btnPopup.addEventListener('click', () => {
-    wrapper.classList.add('active');
-});
+    // Función para mostrar/ocultar la pantalla de inicio de sesión
+    function toggleLoginContainer() {
+        loginContainer.style.display = loginContainer.style.display === 'none' ? 'flex' : 'none';
+    }
 
-btnPopup.addEventListener('click', () => {
-    wrapper.classList.add('active-popup');
+    // Agrega eventos de clic a los botones
+    navLoginBtn.addEventListener('click', toggleLoginContainer);
+    menuLoginBtn.addEventListener('click', toggleLoginContainer);
+
+    // Cerrar la pantalla de inicio de sesión al hacer clic en la 'X'
+    const iconClose = document.querySelector('.icon-close');
+    if (iconClose) {
+        iconClose.addEventListener('click', toggleLoginContainer);
+    }
 });
 
