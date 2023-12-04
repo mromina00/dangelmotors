@@ -1,16 +1,3 @@
-//Javascript Menú Desplegable
-const navtoggle = document.querySelector('.navtoggle')
-const toggle_icon = document.querySelector('.navtoggle i')
-const menu_desplegable = document.querySelector('.menu-desplegable')
-
-navtoggle.onclick = function (){
-    menu_desplegable.classList.toggle('open');
-    const isOpen = menu_desplegable.classList.contains('open')
-
-    toggle_icon.classList = isOpen
-    ? 'bx bx-x'
-    : 'bx bx-menu'
-}
 
 //Javascript Slider Image
 const btns = document.querySelectorAll(".nav-btn");
@@ -80,12 +67,12 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
     .then(data => {
         console.log(data)
 
-        cad = 
+        cad4 = 
         `<div class="container">
             <h2>Cotización Dolar Hoy</h2>
             <div class = "tarjetas">
                 <div class="contenedor-dolar">
-                    <img class="container-logo" src="./imagenes/logo-bluelytics.webp" alt="Bluelytics">
+                    <img class="container-logo" src="../imagenes/logo-bluelytics.webp" alt="Bluelytics">
                     <div class="container-data">
                         <h3>Dolar Oficial</h3>
                         <div class="data-valores">
@@ -98,7 +85,7 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
                     </div>
                 </div>
                 <div class="contenedor-dolar">
-                    <img class="container-logo" src="./imagenes/logo-bluelytics.webp" alt="Bluelytics">
+                    <img class="container-logo" src="../imagenes/logo-bluelytics.webp" alt="Bluelytics">
                     <div class="container-data">
                         <h3>Dolar Blue</h3>
                         <div class="data-valores">
@@ -114,7 +101,7 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
         </div>`
         
 
-        document.querySelector(".dolar").innerHTML = cad;
+        document.querySelector(".dolar").innerHTML = cad4;
 
     });
 
@@ -141,44 +128,6 @@ function validar(){
     return !error;
 }
 
-// Botón Scroll
-const btn_scrolltop = document.getElementById("btn_scrolltop");
-btn_scrolltop.addEventListener('click',() =>{
-    window.scrollTo(0, 0);
-});
 
-window.onscroll = () => {
-    add_btn_scrolltop();
-}
 
-const add_btn_scrolltop = () => {
-    if (window.scrollY < 300){
-        btn_scrolltop.classList.remove("btn-scrolltop-on");
-    } else {
-        btn_scrolltop.classList.add("btn-scrolltop-on");
-    }
-}
-
-// Botón de Inicio de Sesión
-
-document.addEventListener('DOMContentLoaded', function() {
-    const loginContainer = document.getElementById('login-container');
-    const navLoginBtn = document.getElementById('nav-login-btn');
-    const menuLoginBtn = document.getElementById('menu-login-btn');
-
-    // Función para mostrar/ocultar la pantalla de inicio de sesión
-    function toggleLoginContainer() {
-        loginContainer.style.display = loginContainer.style.display === 'none' ? 'flex' : 'none';
-    }
-
-    // Agrega eventos de clic a los botones
-    navLoginBtn.addEventListener('click', toggleLoginContainer);
-    menuLoginBtn.addEventListener('click', toggleLoginContainer);
-
-    // Cerrar la pantalla de inicio de sesión al hacer clic en la 'X'
-    const iconClose = document.querySelector('.icon-close');
-    if (iconClose) {
-        iconClose.addEventListener('click', toggleLoginContainer);
-    }
-});
 
