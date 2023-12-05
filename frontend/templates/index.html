@@ -87,39 +87,17 @@
         <h2>VEHÍCULOS</h2>
         <a href="https://vehiculos.mercadolibre.com.ar/_CustId_1320663840" class="stock" target="_blank">Ver stock completo</a>
 		<div class="container">
-            <div class="card-section">
-                <div class="card">
-                        <img src="../imagenes/audi-q3.webp" alt="">
-                        <h3>Audi Q3</h3>
+            <div class="card-section" id="app">
+
+                <div class="card" v-for="vehiculo in vehiculos">
+                    <img :src="vehiculo.imagen" :key="vehiculo.id">
+                    <div class="card-info">
+                        <p>{{vehiculo.estado}}</p>
+                        <h3>{{vehiculo.marca}} {{vehiculo.modelo}}</h3>
+                        <p>{{vehiculo.anio}} | $USD {{vehiculo.precio}}</p>
+                    </div>
                 </div>
-                <div class="card">
-                        <img src="../imagenes/mercedes-clc.webp" alt="">
-                        <h3>Mercedes CLC</h3>
-                </div>
-                <div class="card">
-                        <img src="../imagenes/ram1500.webp" alt="">
-                        <h3>Ram 1500</h3>
-                </div>
-                <div class="card">
-                        <img src="../imagenes/mercedes-gle.webp" alt="">
-                        <h3>Mercedes GLE</h3>
-                </div>
-                <div class="card">
-                        <img src="../imagenes/toyota-hilux.webp" alt="">
-                        <h3>Toyota Hilux</h3>
-                </div>
-                <div class="card">
-                        <img src="../imagenes/dodge-ram.webp" alt="">
-                        <h3>Dodge Ram</h3>
-                </div>
-                <div class="card">
-                        <img src="../imagenes/fiat-500x.webp" alt="">
-                        <h3>Fiat 500x</h3>
-                </div>
-                <div class="card">
-                        <img src="../imagenes/chevrolet-montana.webp" alt="">
-                        <h3>Chevrolet Montana</h3>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -207,5 +185,7 @@
         
     </button>
     <div class="copyright"></div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/vehiculos.js"></script>
 </body>
 </html>
