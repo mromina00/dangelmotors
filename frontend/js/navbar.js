@@ -70,30 +70,6 @@ const add_btn_scrolltop = () => {
     }
 }
 
-// Login
-let cad4 = `
-<div class="wrapper">
-    <span class="icon-close"><i class='bx bxs-x-circle'></i></span>
-    <div class="login">
-        <h2>Iniciar Sesión</h2>
-        <form action="acceso-login" method="post">
-            <div class="input-box-login">
-                <span class="icon"><i class='bx bx-envelope'></i></span>
-                <input type="email" required placeholder=" " >
-                <label>Email</label>
-            </div>
-            <div class="input-box-login">
-                <span class="icon"><i class='bx bx-lock-alt'></i></span>
-                <input type="password" required placeholder=" " >
-                <label>Contraseña</label>
-            </div>
-            <button type="submit" class="btn-login1">Iniciar Sesión</button>
-        </form>
-    </div>
-</div>` 
-
-document.querySelector(".login-container").innerHTML = cad4
-
 // Botón de Inicio de Sesión ventana emergente
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -116,3 +92,4 @@ document.addEventListener('DOMContentLoaded', function() {
         iconClose.addEventListener('click', toggleLoginContainer);
     }
 });
+
