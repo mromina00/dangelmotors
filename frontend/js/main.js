@@ -1,4 +1,3 @@
-
 //Javascript Slider Image
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".image-slide");
@@ -60,74 +59,3 @@ btns.forEach((btn,i) => {
         sliderNav(i);
     })
 })
-
-//Consumo API Cotización del Dolar
-fetch('https://api.bluelytics.com.ar/v2/latest') 
-    .then(response => response.json()) 
-    .then(data => {
-        console.log(data)
-
-        cad4 = 
-        `<div class="container">
-            <h2>Cotización Dolar Hoy</h2>
-            <div class = "tarjetas">
-                <div class="contenedor-dolar">
-                    <img class="container-logo" src="../imagenes/logo-bluelytics.webp" alt="Bluelytics">
-                    <div class="container-data">
-                        <h3>Dolar Oficial</h3>
-                        <div class="data-valores">
-                            <p>${data.oficial.value_buy}<span>Compra</span></p>
-                            <p>${data.oficial.value_sell}<span>Venta</span></p>
-                        </div>
-                    </div>
-                    <div class="container-fecha">
-                        <span>Última actualización: ${data.last_update}</span>
-                    </div>
-                </div>
-                <div class="contenedor-dolar">
-                    <img class="container-logo" src="../imagenes/logo-bluelytics.webp" alt="Bluelytics">
-                    <div class="container-data">
-                        <h3>Dolar Blue</h3>
-                        <div class="data-valores">
-                            <p>${data.blue.value_buy}<span>Compra</span></p>
-                            <p>${data.blue.value_sell}<span>Venta</span></p>
-                        </div>
-                    </div>
-                    <div class="container-fecha">
-                        <span>Última actualización: ${data.last_update}</span>
-                    </div>
-                </div>
-            </div>
-        </div>`
-        
-
-        document.querySelector(".dolar").innerHTML = cad4;
-
-    });
-
-// Validación de Formulario
-function validar(){
-    let mensaje = document.getElementById("mensaje");
-    let error = false;
-    document.getElementById("validar_mensaje").innerHTML="&nbsp; ";
-
-    if(mensaje.value ==""){
-        document.getElementById("validar_mensaje").innerHTML="Indique el motivo de su consulta***";
-        error=true;
-        mensaje.focus();
-        // Si el campo de "Mensaje" queda en blanco, indica que el usuario debe ingresar una consulta.
-        // Agregué un DIV con ID "validar_mensaje" y que se muestre en rojo el mensaje de error.
-    }
-
-    if(error==false){
-        document.getElementById("mensaje").value= "";
-        document.getElementById("validar_mensaje").innerHTML= "&nbsp;";
-        alert("El mensaje fué enviado con éxito!");
-        //Si no hay error, nos muestra el alerta de mensaje enviado. Y limpia los campos.
-    }
-    return !error;
-}
-
-
-
-
