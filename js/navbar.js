@@ -3,7 +3,7 @@ let cad = `
     <nav class="nav">
         <!-- logo -->
         <a href="#inicio" class="logo">
-            <img src="../imagenes/logonavbar.webp" alt="logo dangel motors">
+            <img src="./imagenes/logonavbar.webp" alt="logo dangel motors">
         </a>
         <!-- lista de navegación -->
         <ul class="navbar">

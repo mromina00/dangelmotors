@@ -2,7 +2,7 @@
 let cad1 = `
     <div class="footer-container">
         <div class="footer-logo">
-            <a href="#inicio" class="logofooter"><img src="../imagenes/logonavbar.webp" alt="logo"></a>
+            <a href="#inicio" class="logofooter"><img src="./imagenes/logonavbar.webp" alt="logo"></a>
         </div>
         <div class="row">
             <div class="footer-col">

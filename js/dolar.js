@@ -9,7 +9,7 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
             <h2>Cotización Dolar Hoy</h2>
             <div class = "tarjetas">
                 <div class="contenedor-dolar">
-                    <img class="container-logo" src="../imagenes/logo-bluelytics.webp" alt="Bluelytics">
+                    <img class="container-logo" src="./imagenes/logo-bluelytics.webp" alt="Bluelytics">
                     <div class="container-data">
                         <h3>Dolar Oficial</h3>
                         <div class="data-valores">
@@ -22,7 +22,7 @@ fetch('https://api.bluelytics.com.ar/v2/latest')
                     </div>
                 </div>
                 <div class="contenedor-dolar">
-                    <img class="container-logo" src="../imagenes/logo-bluelytics.webp" alt="Bluelytics">
+                    <img class="container-logo" src="./imagenes/logo-bluelytics.webp" alt="Bluelytics">
                     <div class="container-data">
                         <h3>Dolar Blue</h3>
                         <div class="data-valores">
