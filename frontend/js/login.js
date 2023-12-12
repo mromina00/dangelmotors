@@ -26,10 +26,8 @@ function login() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    if (email === 'admin@admin.com' && password === "admin123") {
+    if (email === 'admin@admin' && password === "$admin1") {
         window.location.href = "admin.html";
-    } else if (email === "usuario@usuario.com" && password === "prueba123") {
-        window.location.href = "index.html";
     } else {
         alert("Credenciales incorrectas.")
     }

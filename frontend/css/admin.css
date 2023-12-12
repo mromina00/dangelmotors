@@ -1,0 +1,222 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300,600&family=Montserrat:700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Madurai', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* variables */
+:root{
+    --negro: #141414;
+    --blanco: #fafafa;
+    --gris-oscuro: #3b3b3b;
+    --gris: #7a7a7a;
+    --gris-claro: #e0e0e0;
+    --bordo: #a52a2a;
+    --fuente-titulo: 'Montserrat', sans-serif;
+    --fuente-parrafo: 'Hind Madurai', sans-serif;
+}
+
+body{
+    background-color: var(--negro);
+}
+
+main{
+    margin: 0 0 50px 0;
+}
+
+.navbar{
+    background: var(--negro);
+    height: 80px;
+}
+
+.navbar img{
+    height: 30px;
+    opacity: 70%;
+}
+
+.navbar p{
+    font-family: var(--fuente-titulo);
+    color: var(--gris);
+    font-size: 1.3em;
+    margin: 0;
+}
+
+#logout{
+    color: var(--gris);
+    border: none;
+    background: none;
+    font-size: 1.4em;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius:3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#logout:hover{
+    background: var(--negro);
+    color: var(--bordo);
+}
+
+.new{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new h1{
+    font-family: var(--fuente-titulo);
+    color: var(--gris-claro);
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
+.new a {
+    width: 160px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--negro);
+    cursor: pointer;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 3px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .new a:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .new a:focus {
+    outline: none;
+  }
+  
+  .new a {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+  }
+
+table{
+    font-family: var(--fuente-parrafo);
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+td.img{
+    padding: 0;
+    max-height: 120px;
+    width: 100px;
+}
+
+td img{
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+}
+
+td button {
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blanco);
+    cursor: pointer;
+    margin: 15px;
+    height: 45px;
+    text-align:center;
+    vertical-align: middle;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 3px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  td button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  td button:focus {
+    outline: none;
+  }
+  
+  td button {
+    background-image: linear-gradient(
+      to right,
+      #eb3941,
+      #f15e64,
+      #e14e53,
+      #e2373f
+    );
+  }
+
+  td a{
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  td a:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  td a:focus {
+    outline: none;
+  }
+  
+  td a {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+  }
+
+footer{
+    background: var(--negro);
+    color: var(--gris);
+    text-align: center;
+}

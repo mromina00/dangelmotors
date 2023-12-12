@@ -1,0 +1,105 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300,600&family=Montserrat:700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Madurai', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* variables */
+:root{
+    --negro: #141414;
+    --blanco: #fafafa;
+    --gris-oscuro: #3b3b3b;
+    --gris: #7a7a7a;
+    --gris-claro: #e0e0e0;
+    --bordo: #a52a2a;
+    --fuente-titulo: 'Montserrat', sans-serif;
+    --fuente-parrafo: 'Hind Madurai', sans-serif;
+}
+
+body{
+    background-color: var(--negro);
+}
+
+.navbar{
+    background: var(--negro);
+    height: 80px;
+}
+
+.navbar img{
+    height: 30px;
+    opacity: 70%;
+}
+
+.navbar a{
+    font-family: var(--fuente-titulo);
+    color: var(--gris);
+    font-size: 1.3em;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: var(--gris-claro);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background: var(--blanco);
+    margin: 10px auto;
+    width: 500px;
+    padding: 22px;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+form h1{
+    font-family: var(--fuente-titulo);
+    text-align: center;
+}
+
+form .mb-3{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-parrafo);
+}
+
+form button {
+    cursor: pointer;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  form button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  form button:focus {
+    outline: none;
+  }
+  
+  form button {
+    background-image: linear-gradient(
+      to right,
+      #0ba360,
+      #3cba92,
+      #30dd8a,
+      #2bb673
+    );
+  }
